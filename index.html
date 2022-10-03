@@ -6,16 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Todo List August 2022</title>
 
+        <link rel="stylesheet" href="main.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="main.css" />
     </head>
     <body> 
         <main class="app">
             
-            <section class="greeting"></section>
+            <section class="greeting">
                 <h2 class="title">
                     What's up, <input type="text" id="name" placeholder="Name here">
                 </h2>
@@ -24,7 +24,7 @@
 
             <section class="create-todo">
             </h3>CREATE A TODO</h3>
-            <form action="" id="new-todo-form"></form>
+            <form id="new-todo-form">
                 <h4>What's on your todo list?</h4>
                 <input 
                     type="text" 
@@ -61,7 +61,7 @@
 
             <section class="todolist">
             <h3>TODO LIST</h3>
-            <div class = "list" id="todo-list">
+            <div class = "list" id="todo-list"></div>
                 <!-- div class="todo-item"></div>
                     <label>
                         <input type="checkbox" />
@@ -88,9 +88,9 @@
             <div class="actions">
                 <button class="edit">Edit</button>
                 <button class="delete">Delete</button !--> 
-            </div>
+            
         </section>
-                </main>
+    </main>
         
         <script src="main.js"></script>
     </body>

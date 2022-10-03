@@ -1,7 +1,7 @@
 /* Variables */
 :root {
 	--primary: #EA40A4;
-	--school: #3a82ee;
+	--business: #3a82ee;
 	--personal: var(--primary);
 	--light: #EEE;
 	--grey: #888;
@@ -10,7 +10,7 @@
 
 	--shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
-	--school-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+	--business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
 	--personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
 }
 /* End of Variables */
@@ -118,8 +118,8 @@ input[type="checkbox"] {
 	width: 20px;
 	height: 20px;
 	border-radius: 999px;
-	border: 2px solid var(--school);
-	box-shadow: var(--school-glow);
+	border: 2px solid var(--business);
+	box-shadow: var(--business-glow);
 }
 
 .bubble.personal {
@@ -133,8 +133,8 @@ input[type="checkbox"] {
 	opacity: 0;
 	width: 0px;
 	height: 0px;
-	background-color: var(--school);
-	box-shadow: var(--school-glow);
+	background-color: var(--business);
+	box-shadow: var(--business-glow);
 	border-radius: 999px;
 	transition: 0.2s ease-in-out;
 }
@@ -219,22 +219,19 @@ input:checked ~ .bubble::after {
 }
 
 .todo-item .actions button:hover {
-    opacity: 0.75;
+	opacity: 0.75;
 }
 
 .todo-item .actions .edit {
-    margin-right: 0.5rem;
-    background-color: var(--primary);
+	margin-right: 0.5rem;
+	background-color: var(--primary);
 }
 
 .todo-item .actions .delete {
-    background-color: var(--danger);
+	background-color: var(--danger);
 }
 
 .todo-item.done .todo-content input {
-    text-decoration: line-through;
-    color: var(--grey);
+	text-decoration: line-through;
+	color: var(--grey);
 }
-
-
-
